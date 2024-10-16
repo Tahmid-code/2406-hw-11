@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+:root{
+    --clr: #0f2f44;
+    --font: "Ubuntu", sans-serif;
+    --font2: "Abril Fatface", serif;
+    --font3:"Open Sans", sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+a{
+   text-decoration: none;
+}
+/* header */
+header{
+    width: 100%;
+    background-color: var(--clr);
+}
+header .row{
+    justify-content: space-between;
+}
+header .row span{
+    font-family: var(--font);
+    color: white;
+
+}
+/* end of header */
+
+/* nav */
+nav .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .row ul {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+nav .row ul li {
+    padding: 20px 19px;
+}
+nav .row ul li a {
+    font-family: var(--font);
+    font-weight: 400;
+    color: #222222;
+}
+nav .row ul li a:hover {
+    color: yellow;
+}
+/* end of nav */
+/* footer */
+footer{
+    background-image: url(./images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    flex-direction: column;
+}
+footer .column {
+    margin: 136px 0;
+}
+footer .column h2 {
+    font-family: var(--font2);
+    color: #0f2f44;
+    font-weight: 600;
+    font-size: 80px;
+}
+footer .column{
+    width: 470px;
+    
+}
+footer .column h4 {
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 32px;
+    color: #8484bf;
+    text-transform: capitalize;
+}
+footer .column p{ 
+    font-family:var(--font3);
+    font: 200;
+}
+footer .column span {
+    background-color: #8383bf;
+    padding: 10px;
+    font-family: var(--font2);
+    font-size: 20px;
+    color: white;
+}
+
+
+
+/* end of footer */
